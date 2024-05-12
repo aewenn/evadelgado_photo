@@ -44,7 +44,6 @@ a:hover {
 section {
     padding-left: 20px;
     padding-right: 20px;
-    width: 100%;
 }
 
 .slider {
@@ -52,7 +51,6 @@ section {
     overflow: hidden;
     width: 100%;
     padding: 0;
-    max-height: 650px;
 }
 
 .slider-inner {
@@ -75,6 +73,10 @@ section {
 
 .slider img.active {
     opacity: 1;
+}
+
+.slider img.first {
+    transition: none;
 }
 
 footer {
