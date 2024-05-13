@@ -1,5 +1,5 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", serif;
     margin: 0;
     padding: 0;
     min-width: 320px;
@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    height: 100px;
+    height: 75px;
 }
 
 nav {
@@ -57,7 +57,7 @@ section {
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: calc(100% / 2);
+    padding-top: calc(100% / 1.2);
 }
 
 .slider img {
@@ -79,6 +79,52 @@ section {
     transition: none;
 }
 
+#àpropos {
+    background-color: #cdcdcd;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: italic;
+    width: 85%;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#àpropos img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.about-text p {
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 10px;
+}
+
 footer {
     background-color: #efefef;
     padding-top: 50px;
@@ -97,7 +143,7 @@ footer p {
 
 /* Media Queries */
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:420px) {
 
     .logo {
         height: 110px;
@@ -106,6 +152,15 @@ footer p {
     ul {
         gap: 50px;
         font-size: 1em;
+    }
+
+    .slider-inner {
+        padding-top: calc(100% / 1.7);
+    }
+
+    #àpropos img {
+        height: 175px;
+        width: 175px;
     }
 
     footer {
@@ -118,6 +173,14 @@ footer p {
         font-size: 1em;
     }
 
+}
+
+@media screen and (min-width:550px) {
+
+    #àpropos img {
+        height: 220px;
+        width: 220px;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -133,6 +196,32 @@ footer p {
 
     footer p {
         font-size: 1.10em;
+    }
+
+    .slider-inner {
+        padding-top: calc(100% / 1.9);
+    }
+
+    #àpropos img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .about-text {
+        width: 67%;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
     }
 }
 
@@ -152,6 +241,23 @@ footer p {
         gap: 50px;
     }
 
+    .slider-inner {
+        padding-top: calc(100% / 2.15);
+    }
+
+    #àpropos img {
+        height: 315px;
+        width: 315px;
+    }
+
+    h1 {
+        font-size: 1.9em;
+    }
+
+    .about-text p {
+        font-size: 1.1em;
+        text-align: cenyer;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -163,5 +269,18 @@ footer p {
     nav {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .slider-inner {
+        padding-top: calc(100% / 2.2);
+    }
+
+    #àpropos img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .about-text p {
+        line-height: 30px;
     }
 }
